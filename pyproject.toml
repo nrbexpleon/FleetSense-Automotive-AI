@@ -1,0 +1,18 @@
+[build-system]
+requires = []
+build-backend = "_custom_build_backend"
+backend-path = ["."]
+
+[project]
+name = "fleetsense-automotive-ai"
+version = "0.1.0"
+description = "Explainable automotive fleet intelligence and OTA feedback platform"
+requires-python = ">=3.11"
+license = {text = "LicenseRef-Proprietary"}
+dependencies = []
+
+[project.scripts]
+fleetsense = "fleetsense.cli:main"
+
+[tool.ruff]
+line-length = 100
